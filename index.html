@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не Пупырка</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <header class="header hero__header">
+            <div class="logo header__logo">НЕ_ПУПЫРКА.РУ</div>
+
+            <nav>
+                <div class="burger header__burger" onclick="burgerMenu()"></div>
+
+                <ul class="navbar header__navbar">
+                    <li><a class="link navbar__link" href="#">О нас</a></li>
+                    <li><a class="link navbar__link" href="#">Скидки</a></li>
+                    <li><a class="link navbar__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <div class="text hero__text">
+            <h1 class="h1 text__h1">POP IT!</h1>
+            <p class="info text__info">Лучшая игрушка-антистресс - бесконечная пупырчатая пленка!</p>
+            <button class="btn text__btn">КУПИТЬ</button>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="about main__about">
+            <h2 class="h2 about__h2">Что такое Pop it?</h2>
+            <p class="info about__info about__info_dark">Popit дословно переводится как &#171;лопни это&#187;. 
+                Это детская игра, процесс в которой можно сравнить с лопанием воздушно-пузырчатой упаковочной плёнки.
+                Но в отличие от пленки поп-иты можно давить с характерным ощущением и звуками &#171;бесконечно&#187;: десятки силиконовых пузырей просто выдавливаются в другую сторону.
+            </p>
+        </section>
+
+        <section class="choose main__choose">
+            <h2 class="h2 choose__h2">Выбери свой Pop-It!</h2>
+
+            <div class="choice choose__choice">
+                <div class="item choice__item">
+                    <img src="./src/images/square.png" alt="Квадратный" class="img item__img">
+                    <div class="info item__info item__info_dark">Разноцветный квадратный</div>
+                    <button class="btn item__btn item__btn_orange">КУПИТЬ</button>
+                </div>
+                <div class="item choice__item">
+                    <img src="./src/images/amongus.png" alt="Амогус" class="img item__img">
+                    <div class="info item__info item__info_dark">Among Us мраморный</div>
+                    <button class="btn item__btn item__btn_orange">КУПИТЬ</button>
+                </div>
+                <div class="item choice__item">
+                    <img src="./src/images/round.png" alt="Круглый" class="img item__img">
+                    <div class="info item__info item__info_dark">Разноцветный круглый</div>
+                    <button class="btn item__btn item__btn_orange">КУПИТЬ</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules main__rules">
+            <div class="text rules__text rules__text_size">
+                <h2 class="h2 text__h2">Правила игры</h2>
+
+                <p class="info text__info text__info_dark">Игроки ходят по очереди и нажимают на пупырки. Нужно обязательно
+                заканчивать ряд который начали. Нажимать можно максимум на 3 пупырки
+                одновременно (обязательно должны быть рядом, нельзя нажимать сразу
+                несколько пупырок, если они не находяться впритык) Задача сделать так, чтобы
+                соперник сходил последним. Кто ходил последним - тот проиграл!)</p>
+            </div>
+
+            <img src="./src/images/photo.jpg" alt="Игра" class="img rules__img rules__img_big">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="navbar footer__navbar footer__navbar_dark">
+            <li><a href="#" class="logo navbar__logo navbar__logo_white">НЕ_ПУПЫРКА.РУ</a></li>
+            <li><a href="#" class="link navbar__link navbar__link_white">Способы оплаты</a></li>
+            <li><a href="#" class="link navbar__link navbar__link_white">Доставка</a></li>
+            <li><a href="#" class="link navbar__link navbar__link_white">ОПТ</a></li>
+            <li><a href="#" class="link navbar__link navbar__link_white">Контакты</a></li>
+        </ul>
+    </footer>
+
+    <script src="./src/js/index.js" />
+</body>
+</html>

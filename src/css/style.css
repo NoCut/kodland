@@ -1,0 +1,408 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.navbar__link_white {
+  color: #FFF;
+}
+.navbar__logo_white {
+  text-decoration: none;
+  color: #FFF;
+}
+@media (max-width: 768px) {
+  .navbar {
+    gap: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+
+.burger {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
+}
+.burger:after, .burger:before {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.burger:after {
+  margin-top: 5px;
+  content: " ";
+}
+.burger:before {
+  margin-top: -5px;
+  content: " ";
+}
+@media (min-width: 426px) {
+  .burger {
+    display: none;
+  }
+}
+
+.logo {
+  margin-block: auto;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.header__burger_active {
+  background-color: transparent;
+}
+.header__burger_active:after, .header__burger_active:before {
+  margin: 0;
+}
+.header__burger_active:after {
+  transform: rotate(-45deg);
+}
+.header__burger_active:before {
+  transform: rotate(45deg);
+}
+.header__navbar_active {
+  transform: scaleX(1);
+  background-color: rgba(145, 140, 140, 0.8);
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .header {
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    font-size: 14px;
+    padding-inline: 30px;
+  }
+}
+
+.h1 {
+  font-size: 150px;
+  font-weight: 900;
+}
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 96px;
+  }
+}
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 425px) {
+  .h1 {
+    font-size: 36px;
+  }
+}
+
+.info {
+  font-size: 28px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .info {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .info {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  background: #CBF3F0;
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  border: 0;
+  padding: 20px 70px;
+}
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.text {
+  color: #FFF;
+  width: 45%;
+}
+.text__info {
+  margin-top: 10px;
+}
+.text__h1 {
+  margin-bottom: 0;
+}
+.text__btn {
+  margin-block: 60px 200px;
+}
+@media (max-width: 1024px) {
+  .text__btn {
+    margin-block: 30px 120px;
+  }
+}
+@media (max-width: 425px) {
+  .text__btn {
+    margin-block: 15px 80px;
+  }
+}
+
+.hero {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.hero__text {
+  margin: 180px 0 0 100px;
+}
+@media (max-width: 1024px) {
+  .hero__text {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__text {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .hero__text {
+    margin-top: 60px;
+  }
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 36px;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 475px) {
+  .h2 {
+    font-size: 20px;
+  }
+}
+
+.about {
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  padding: 200px 100px;
+}
+.about__info_dark {
+  color: #000;
+  font-weight: 300;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .about__info_dark {
+    font-size: 18px;
+  }
+}
+@media (max-width: 475px) {
+  .about__info_dark {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    padding-inline: 25px;
+  }
+}
+
+.img {
+  width: 240px;
+  height: 240px;
+}
+@media (max-width: 768px) {
+  .img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 425px) {
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.item {
+  width: 253px;
+}
+.item__info {
+  margin-top: 30px;
+}
+.item__btn {
+  margin-top: 20px;
+}
+.item__btn_orange {
+  background-color: #FFBF69;
+  padding-block: 10px;
+}
+@media (max-width: 768px) {
+  .item {
+    width: 160px;
+  }
+}
+@media (max-width: 425px) {
+  .item {
+    width: 100px;
+  }
+}
+
+.choice {
+  display: flex;
+  justify-content: space-around;
+}
+
+.choose {
+  text-align: center;
+  background-color: #CBF3F0;
+  padding: 200px 100px;
+}
+.choose__choice {
+  margin-top: 50px;
+}
+@media (max-width: 1024px) {
+  .choose {
+    padding: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .choose {
+    padding-inline: 25px;
+  }
+}
+
+.text__info_dark {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .text__info_dark {
+    font-size: 15px;
+  }
+}
+
+.rules {
+  background-image: url("../images/bg-grid.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rules__img_big {
+  width: 50%;
+  height: 40%;
+}
+@media (max-width: 425px) {
+  .rules__img_big {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  .rules__text_size {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .rules {
+    padding-inline: 25px;
+  }
+}
+@media (max-width: 475px) {
+  .rules {
+    flex-direction: column;
+  }
+}
+
+.footer__navbar {
+  margin-bottom: 0;
+}
+.footer__navbar_dark {
+  background-color: #333;
+  color: #FFF !important;
+  gap: 0;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+@media (max-width: 768px) {
+  .footer__navbar {
+    padding-inline: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
